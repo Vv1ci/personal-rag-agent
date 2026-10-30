@@ -1,0 +1,7 @@
+Day 22 Integration Test Document
+
+The internal project codename is Aurora-17.
+
+The knowledge base refresh trigger is called Blue Lantern.
+
+This document exists only for testing the Personal RAG Agent upload, reindex, retrieval, and answer-generation workflow.

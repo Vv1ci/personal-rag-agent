@@ -1,0 +1,59 @@
+# Python, virtual environments, tools
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+# Personal documents and ALL derived content
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+/chroma_db/
+/chromadb/
+*.sqlite*
+*.db
+*.db-wal
+*.db-shm
+# Downloaded models; keep rag/embeddings source code
+/models/
+/embeddings/
+.cache/
+*.safetensors
+*.gguf
+*.onnx
+*.pt
+*.pth
+# Reports/screenshots may expose personal paths or document contents
+/docs/project_audit.json
+/docs/screenshots/
+/requirements_full_backup.txt
+/api/main_day18_backup.py
+*.log
+/logs/
+/temp/
+/tmp/
+*.pending
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+build/
+dist/
+*.egg-info/
