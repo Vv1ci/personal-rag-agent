@@ -57,3 +57,12 @@ desktop.ini
 build/
 dist/
 *.egg-info/
+
+# Learning history / obsolete development utilities (keep in local original)
+/day*_test.py
+/scripts/day*_*.py
+/scripts/project_snapshot.py
+/scripts/test_data/
+/rag/indexing/
+/rag/preprocessing/tokenizer.py
+/run_ingestion.py

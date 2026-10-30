@@ -79,7 +79,9 @@ python -m unittest discover -s tests -v
 
 测试覆盖重复上传、替换、删除、路径校验、失败恢复，以及真实 Chroma 与 FastAPI 接口生命周期。测试使用临时库和固定嵌入，不调用 Ollama、不下载模型，也不改个人知识库。独立测试依赖见 `requirements-test.txt`。
 
-GitHub Actions 配置自动运行语法检查和独立测试；只有远程流水线实际通过后才可声称 CI 已验证。`day*_test.py` 是开发实验脚本，部分依赖本地资料和模型，不属于独立测试套件。
+GitHub Actions 自动运行语法检查和独立测试。仓库保留 `tests/` 中可独立运行的正式测试；开发阶段的 day 脚本、教学索引示例、临时审计及快照工具不随正式源码分发。
+
+可选命令行工具为 `ask_rag.py`（提问）、`run_api.py`（启动 API）、`validate_chunks.py`（检查分块结构）；日常文档更新使用页面/API 的增量索引流程。
 
 人工验收见 [使用说明](docs/USAGE.md)，可使用 `examples/acceptance.txt`。
 
